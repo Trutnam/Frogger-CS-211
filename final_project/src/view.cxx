@@ -24,7 +24,7 @@ View::View(Model const& model)
         water_sprite({grid_size, grid_size}, water_color),
         street_sprite({grid_size, grid_size}, street_color),
         sidewalk_sprite({grid_size, grid_size}, sidewalk_color)
-        //score_sprite(std::to_string(model_.score_)) //font)
+        
 { }
 
 void
