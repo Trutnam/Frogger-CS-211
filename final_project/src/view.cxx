@@ -1,5 +1,7 @@
 #include "view.hxx"
 
+#include <iostream>
+
 using Color = ge211::Color;
 using Sprite_set = ge211::Sprite_set;
 
@@ -27,6 +29,15 @@ View::View(Model const& model)
         
 { }
 
+ge211::Dims<int>
+View::initial_window_dimensions() const
+{
+    int x = grid_size * 13;
+    int y = grid_size * 23;
+
+    return {x, y};
+}
+
 void
 View::draw(ge211::Sprite_set& set)
 {
@@ -37,4 +48,93 @@ View::draw(ge211::Sprite_set& set)
     score_sprite_.reconfigure(score_builder);
 
     set.add_sprite(score_sprite_, {50, 500});
+
+    //i = height
+    for (int i = 0; i < 13; i++)
+    {
+        //sidewalks
+        if ((i == 12) || (i == 6))
+        {
+            //j = width
+            for (int j = 0; j < 23; j++)
+            {
+                set.add_sprite(sidewalk_sprite, {j * grid_size, i * grid_size});
+            }
+        }
+
+        //cars
+        if ((i == 11) || (i == 9) || (i == 8))
+        {
+
+            for (int j = 0; j < 23; j++)
+            {
+                if (model_.lanes_[i].second[j] == '.')
+                {
+                    set.add_sprite(street_sprite, {j * grid_size, i *
+                    grid_size});
+                }
+
+                else
+                {
+                    set.add_sprite(car_sprite, {j * grid_size, i *grid_size});
+                }
+            }
+        }
+
+        //buses
+        if ((i == 10) || (i == 7))
+        {
+
+            for (int j = 0; j < 23; j++)
+            {
+                if (model_.lanes_[i].second[j] == '.')
+                {
+                    set.add_sprite(street_sprite, {j * grid_size, i *
+                                                                  grid_size});
+                }
+
+                else
+                {
+                    set.add_sprite(bus_sprite, {j * grid_size, i *grid_size});
+                }
+            }
+        }
+
+        //logs
+        if ((i >= 1) && (i <= 5))
+        {
+
+            for (int j = 0; j < 23; j++)
+            {
+                if (model_.lanes_[i].second[j] == '.')
+                {
+                    set.add_sprite(log_sprite, {j * grid_size, i *
+                                                                  grid_size});
+                }
+
+                else
+                {
+                    set.add_sprite(water_sprite, {j * grid_size, i *grid_size});
+                }
+            }
+        }
+
+        //wall
+        if (i == 0)
+        {
+            for (int j = 0; j < 23; j++)
+            {
+                if (model_.lanes_[i].second[j] == '.')
+                {
+                    set.add_sprite(sidewalk_sprite, {j * grid_size, i *
+                                                               grid_size});
+                }
+
+                else
+                {
+                    set.add_sprite(street_sprite, {j * grid_size, i *grid_size});
+                }
+            }
+        }
+    }
 }
