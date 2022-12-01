@@ -24,12 +24,17 @@ View::View(Model const& model)
         water_sprite({grid_size, grid_size}, water_color),
         street_sprite({grid_size, grid_size}, street_color),
         sidewalk_sprite({grid_size, grid_size}, sidewalk_color)
-        //score_sprite(std::to_string(model_.score_),) //font)
+        //score_sprite(std::to_string(model_.score_)) //font)
 { }
 
 void
 View::draw(ge211::Sprite_set& set)
 {
-    // This needs to do something!
-   
+    // draw score
+    ge211::Text_sprite::Builder score_builder(sans30_);
+    // this should print the value of the score eventually
+    score_builder << model_.get_score();
+    score_sprite_.reconfigure(score_builder);
+
+    set.add_sprite(score_sprite_, {50, 500});
 }

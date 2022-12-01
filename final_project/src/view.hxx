@@ -22,5 +22,7 @@ private:
     ge211::Rectangle_sprite water_sprite;
     ge211::Rectangle_sprite street_sprite;
     ge211::Rectangle_sprite sidewalk_sprite;
-    //ge211::Text_sprite score_sprite;
+
+    ge211::Font sans30_{"sans.ttf", 30};
+    ge211::Text_sprite score_sprite_;
 };

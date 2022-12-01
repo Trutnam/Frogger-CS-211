@@ -6,6 +6,11 @@ class Model
 {
 
 public:
+
+    // get score function:
+    char* get_score() const;
+
+
     std::vector<std::pair<float, std::string>> lanes_ =
             {
                     { 0.0f, "................................................................"}, //sidewalk lane 0
@@ -22,7 +27,7 @@ public:
                     {-2.0f, "....xxx...xxx..x.x..x...x..xxxx...x..xx...x..xxxxx...x.x.xxx.x.."}, // log lane 9
                     { 0.0f, "xxxxxxx...xxxxxx...xxxxxxxxxxxx....xxxxxxxxx..xxxxxxxx..xxxxxxxx"}, //wall lane 10
             };
-    int score_ = 0;
+    char* score_ = "Score: 0";
     bool alive_ = true;
 
 };
