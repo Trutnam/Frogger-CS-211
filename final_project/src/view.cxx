@@ -18,7 +18,7 @@ static Color const sidewalk_color {120, 120, 120};
 
 View::View(Model const& model)
         : model_(model),
-        frog_sprite({grid_size/2, grid_size/2}, frog_color),
+        frog_sprite({grid_size, grid_size}, frog_color),
         fly_sprite({grid_size/4, grid_size/4}, fly_color),
         car_sprite({grid_size, grid_size}, car_color),
         bus_sprite({grid_size, grid_size}, bus_color),
@@ -44,7 +44,7 @@ View::draw(ge211::Sprite_set& set)
     // draw score
     ge211::Text_sprite::Builder score_builder(sans30_);
     // this should print the value of the score eventually
-    score_builder << model_.get_score();
+    score_builder << "Score: " << model_.get_score();
     score_sprite_.reconfigure(score_builder);
 
     set.add_sprite(score_sprite_, {50, 500});
@@ -137,6 +137,8 @@ View::draw(ge211::Sprite_set& set)
             }
         }
     }
+
+    set.add_sprite(frog_sprite, model_.frog_pos, 1);
 }
 
 
