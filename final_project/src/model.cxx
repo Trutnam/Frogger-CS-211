@@ -15,6 +15,7 @@ void Model::move_frog_up()
     if (frog_pos.y != 0) {
         frog_pos = {frog_pos.x, frog_pos.y - 36};
     }
+    // increases score by 10 if frog reaches furthest position
     if(furthest_traveled > frog_pos.y) {
         score_ += 10;
         furthest_traveled = furthest_traveled - 36;
@@ -57,6 +58,8 @@ void Model::on_frame(double dt){
     for (int i = 0; i < lanes_.size(); i ++) {
         // for each vector in a lane
         for (int j = 0; j < lanes_[0].second.size(); j++) {
+            // If frog collides with an object, FROG DIES!!!!
+
             amt_of_spots = lanes_[i].second.size();
             if (lanes_[i].first < 0){
                 dir = false;
@@ -77,15 +80,20 @@ void Model::on_frame(double dt){
                 lanes_[i].second[j] = lanes_[i].second[int(j + 1) %
                                                        amt_of_spots];
 
-
             }
-            if (initial_posn == 12 && not dir) {
+            else if(initial_posn == 12 && not dir) {
 
                 lanes_[i].second[j] = lanes_[i].second[int(j - 1) %
                                                        amt_of_spots];
 
-
+                }
+            // if frog pos collides with car, bus, or water, IT DIES!!!!
+            if (lanes_[i].second[j] == 'x' && frog_pos ==
+            ge211::geometry::Posn<int> {36 * j, 36 * i}){
+                frog_pos = {36 * 6, 36 * 12};
             }
+
+
     }
     }
 
