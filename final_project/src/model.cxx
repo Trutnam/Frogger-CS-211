@@ -53,43 +53,44 @@ void Model::on_frame(double dt){
     elapsed_time_ = int(elapsed_time_ + 1);
     int initial_posn;
     int amt_of_spots;
-    bool dir = true;
+
+
     // for each pair in lanes
     for (int i = 0; i < lanes_.size(); i ++) {
+
+        // if frog is in this lane, move it according to lane velocity
+        if (frog_pos.y < 36 * 6 && frog_pos.y == 36 * i){
+           if((int) (elapsed_time_ * lanes_[i].first) % amt_of_spots == 12){
+               frog_pos.x = frog_pos.x - 36;
+        }
+        }
+
+
         // for each vector in a lane
         for (int j = 0; j < lanes_[0].second.size(); j++) {
-            // If frog collides with an object, FROG DIES!!!!
 
             amt_of_spots = lanes_[i].second.size();
-            if (lanes_[i].first < 0){
-                dir = false;
-            }
-            else{
-                dir = true;
-            }
 
-            initial_posn =
-                    (int) (elapsed_time_ * lanes_[i].first) % amt_of_spots;
-            if (initial_posn < 0) {
-                initial_posn = amt_of_spots - (abs(initial_posn) %
-                                               amt_of_spots);
-            }
+            initial_posn =(int) (elapsed_time_ * lanes_[i].first) % amt_of_spots;
 
-            if (initial_posn == 12 && dir) {
+
+
+            if (initial_posn == 12 ) {
 
                 lanes_[i].second[j] = lanes_[i].second[int(j + 1) %
                                                        amt_of_spots];
 
             }
-            else if(initial_posn == 12 && not dir) {
 
-                lanes_[i].second[j] = lanes_[i].second[int(j - 1) %
-                                                       amt_of_spots];
 
-                }
             // if frog pos collides with car, bus, or water, IT DIES!!!!
             if (lanes_[i].second[j] == 'x' && frog_pos ==
             ge211::geometry::Posn<int> {36 * j, 36 * i}){
+                frog_pos = {36 * 6, 36 * 12};
+            }
+
+            // if frog is left or right of the screen, IT DIES!!!!
+            if (frog_pos.x < 0 || frog_pos.x > 36 * 12){
                 frog_pos = {36 * 6, 36 * 12};
             }
 

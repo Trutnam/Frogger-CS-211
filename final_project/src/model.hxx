@@ -35,11 +35,11 @@ public:
     std::vector<std::pair<float, std::string>> lanes_ =
             {
                     {0.0f,"x.xx.x.x.xx.x..xxx.."}, //wall lane 0
-                    {2.0f,"x....xxxxxxxx....xxx"}, // log lane 1
-                    {3.0f,"xxx....xxxxx....xxxx"}, // log lane 2
-                    {2.0f, "x....xxxxx....xxxxx"}, // log lane 3
-                    {1.0f, "x....xxx...xxx....x"}, //log lane 4
-                    {2.0f, "x....xxxx.....xxxxx"}, //log lane 5
+                    {2.0f,"x.....xxxxxx.....xxx"}, // log lane 1
+                    {1.0f,"xxx.....xxxx.....xxx"}, // log lane 2
+                    {2.0f, "x.....xxxx.....xxxx"}, // log lane 3
+                    {1.0f, "xxxx.......xxxx...x"}, //log lane 4
+                    {2.0f, "x.....xxx......xxxx"}, //log lane 5
                     { 0.0f,"...................."}, //sidewalk lane 6
                     { 2.0f, ".........xx....xx..."}, // bus lane 7
                     {1.0f, "..xx...........xx..."}, // car lane 8
