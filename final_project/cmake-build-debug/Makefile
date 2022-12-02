@@ -57,10 +57,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/bobbyaxelrod/Downloads/Working_Frogger/final_project
+CMAKE_SOURCE_DIR = "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 4/final_project"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/bobbyaxelrod/Downloads/Working_Frogger/final_project/cmake-build-debug
+CMAKE_BINARY_DIR = "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 4/final_project/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bobbyaxelrod/Downloads/Working_Frogger/final_project/cmake-build-debug/CMakeFiles /Users/bobbyaxelrod/Downloads/Working_Frogger/final_project/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 4/final_project/cmake-build-debug/CMakeFiles" "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 4/final_project/cmake-build-debug//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bobbyaxelrod/Downloads/Working_Frogger/final_project/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 4/final_project/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target

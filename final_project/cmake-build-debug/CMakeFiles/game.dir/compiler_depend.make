@@ -1136,8 +1136,11 @@ CMakeFiles/game.dir/src/view.cxx.o: ../src/view.cxx \
   /usr/local/include/SDL2/SDL_surface.h \
   /usr/local/include/SDL2/SDL_blendmode.h \
   /usr/local/include/SDL2/SDL_render.h \
-  .cs211/lib/ge211/include/ge211_version.hxx
+  .cs211/lib/ge211/include/ge211_version.hxx \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/iostream
 
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/iostream:
 
 ../src/model.cxx:
 

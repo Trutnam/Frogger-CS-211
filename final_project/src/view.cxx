@@ -33,7 +33,7 @@ ge211::Dims<int>
 View::initial_window_dimensions() const
 {
     int x = grid_size * 13;
-    int y = grid_size * 23;
+    int y = grid_size * 15;
 
     return {x, y};
 }
@@ -138,3 +138,5 @@ View::draw(ge211::Sprite_set& set)
         }
     }
 }
+
+

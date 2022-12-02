@@ -53,10 +53,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/bobbyaxelrod/Downloads/Working_Frogger/final_project
+CMAKE_SOURCE_DIR = "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 4/final_project"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/bobbyaxelrod/Downloads/Working_Frogger/final_project/cmake-build-debug
+CMAKE_BINARY_DIR = "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 4/final_project/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/game.dir/depend.make
@@ -72,58 +72,58 @@ include CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/model.cxx.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/model.cxx.o: ../src/model.cxx
 CMakeFiles/game.dir/src/model.cxx.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bobbyaxelrod/Downloads/Working_Frogger/final_project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/game.dir/src/model.cxx.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/model.cxx.o -MF CMakeFiles/game.dir/src/model.cxx.o.d -o CMakeFiles/game.dir/src/model.cxx.o -c /Users/bobbyaxelrod/Downloads/Working_Frogger/final_project/src/model.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 4/final_project/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/game.dir/src/model.cxx.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/model.cxx.o -MF CMakeFiles/game.dir/src/model.cxx.o.d -o CMakeFiles/game.dir/src/model.cxx.o -c "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 4/final_project/src/model.cxx"
 
 CMakeFiles/game.dir/src/model.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/src/model.cxx.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bobbyaxelrod/Downloads/Working_Frogger/final_project/src/model.cxx > CMakeFiles/game.dir/src/model.cxx.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 4/final_project/src/model.cxx" > CMakeFiles/game.dir/src/model.cxx.i
 
 CMakeFiles/game.dir/src/model.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/model.cxx.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bobbyaxelrod/Downloads/Working_Frogger/final_project/src/model.cxx -o CMakeFiles/game.dir/src/model.cxx.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 4/final_project/src/model.cxx" -o CMakeFiles/game.dir/src/model.cxx.s
 
 CMakeFiles/game.dir/src/view.cxx.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/view.cxx.o: ../src/view.cxx
 CMakeFiles/game.dir/src/view.cxx.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bobbyaxelrod/Downloads/Working_Frogger/final_project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/game.dir/src/view.cxx.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/view.cxx.o -MF CMakeFiles/game.dir/src/view.cxx.o.d -o CMakeFiles/game.dir/src/view.cxx.o -c /Users/bobbyaxelrod/Downloads/Working_Frogger/final_project/src/view.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 4/final_project/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/game.dir/src/view.cxx.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/view.cxx.o -MF CMakeFiles/game.dir/src/view.cxx.o.d -o CMakeFiles/game.dir/src/view.cxx.o -c "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 4/final_project/src/view.cxx"
 
 CMakeFiles/game.dir/src/view.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/src/view.cxx.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bobbyaxelrod/Downloads/Working_Frogger/final_project/src/view.cxx > CMakeFiles/game.dir/src/view.cxx.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 4/final_project/src/view.cxx" > CMakeFiles/game.dir/src/view.cxx.i
 
 CMakeFiles/game.dir/src/view.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/view.cxx.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bobbyaxelrod/Downloads/Working_Frogger/final_project/src/view.cxx -o CMakeFiles/game.dir/src/view.cxx.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 4/final_project/src/view.cxx" -o CMakeFiles/game.dir/src/view.cxx.s
 
 CMakeFiles/game.dir/src/controller.cxx.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/controller.cxx.o: ../src/controller.cxx
 CMakeFiles/game.dir/src/controller.cxx.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bobbyaxelrod/Downloads/Working_Frogger/final_project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/game.dir/src/controller.cxx.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/controller.cxx.o -MF CMakeFiles/game.dir/src/controller.cxx.o.d -o CMakeFiles/game.dir/src/controller.cxx.o -c /Users/bobbyaxelrod/Downloads/Working_Frogger/final_project/src/controller.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 4/final_project/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/game.dir/src/controller.cxx.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/controller.cxx.o -MF CMakeFiles/game.dir/src/controller.cxx.o.d -o CMakeFiles/game.dir/src/controller.cxx.o -c "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 4/final_project/src/controller.cxx"
 
 CMakeFiles/game.dir/src/controller.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/src/controller.cxx.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bobbyaxelrod/Downloads/Working_Frogger/final_project/src/controller.cxx > CMakeFiles/game.dir/src/controller.cxx.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 4/final_project/src/controller.cxx" > CMakeFiles/game.dir/src/controller.cxx.i
 
 CMakeFiles/game.dir/src/controller.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/controller.cxx.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bobbyaxelrod/Downloads/Working_Frogger/final_project/src/controller.cxx -o CMakeFiles/game.dir/src/controller.cxx.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 4/final_project/src/controller.cxx" -o CMakeFiles/game.dir/src/controller.cxx.s
 
 CMakeFiles/game.dir/src/main.cxx.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/main.cxx.o: ../src/main.cxx
 CMakeFiles/game.dir/src/main.cxx.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bobbyaxelrod/Downloads/Working_Frogger/final_project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/game.dir/src/main.cxx.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/main.cxx.o -MF CMakeFiles/game.dir/src/main.cxx.o.d -o CMakeFiles/game.dir/src/main.cxx.o -c /Users/bobbyaxelrod/Downloads/Working_Frogger/final_project/src/main.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 4/final_project/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/game.dir/src/main.cxx.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/main.cxx.o -MF CMakeFiles/game.dir/src/main.cxx.o.d -o CMakeFiles/game.dir/src/main.cxx.o -c "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 4/final_project/src/main.cxx"
 
 CMakeFiles/game.dir/src/main.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/src/main.cxx.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bobbyaxelrod/Downloads/Working_Frogger/final_project/src/main.cxx > CMakeFiles/game.dir/src/main.cxx.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 4/final_project/src/main.cxx" > CMakeFiles/game.dir/src/main.cxx.i
 
 CMakeFiles/game.dir/src/main.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/main.cxx.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bobbyaxelrod/Downloads/Working_Frogger/final_project/src/main.cxx -o CMakeFiles/game.dir/src/main.cxx.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 4/final_project/src/main.cxx" -o CMakeFiles/game.dir/src/main.cxx.s
 
 # Object files for target game
 game_OBJECTS = \
@@ -146,7 +146,7 @@ game: /usr/local/lib/libSDL2_image.dylib
 game: /usr/local/lib/libSDL2_mixer.dylib
 game: /usr/local/lib/libSDL2_ttf.dylib
 game: CMakeFiles/game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bobbyaxelrod/Downloads/Working_Frogger/final_project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 4/final_project/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -158,6 +158,6 @@ CMakeFiles/game.dir/clean:
 .PHONY : CMakeFiles/game.dir/clean
 
 CMakeFiles/game.dir/depend:
-	cd /Users/bobbyaxelrod/Downloads/Working_Frogger/final_project/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/bobbyaxelrod/Downloads/Working_Frogger/final_project /Users/bobbyaxelrod/Downloads/Working_Frogger/final_project /Users/bobbyaxelrod/Downloads/Working_Frogger/final_project/cmake-build-debug /Users/bobbyaxelrod/Downloads/Working_Frogger/final_project/cmake-build-debug /Users/bobbyaxelrod/Downloads/Working_Frogger/final_project/cmake-build-debug/CMakeFiles/game.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 4/final_project/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 4/final_project" "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 4/final_project" "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 4/final_project/cmake-build-debug" "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 4/final_project/cmake-build-debug" "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 4/final_project/cmake-build-debug/CMakeFiles/game.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/game.dir/depend
 
