@@ -76,14 +76,15 @@ View::draw(ge211::Sprite_set& set)
         lives_sprite.reconfigure(lives_builder);
 
         set.add_sprite(lives_sprite, {25, 470});
-            
-        if (int(model_.elapsed_time_) % 10 == 0)
+        
+        //draw flies
+        if (int(model_.elapsed_time_) % 40 == 0)
         {
-            int index = 0 + (rand() % 9);
+            int index = 0 + (rand() % 5);
             fly_pos = fly_spaces[index];
         }
         set.add_sprite(fly_sprite, fly_pos, 1);
-
+            
         //i = height
         for (int i = 0; i < 13; i++) {
             //sidewalks
