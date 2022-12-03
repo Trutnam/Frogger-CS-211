@@ -1,4 +1,4 @@
-# Install script for directory: /Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 5/final_project
+# Install script for directory: /Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 8/final_project
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 5/final_project/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 8/final_project/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

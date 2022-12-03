@@ -53,10 +53,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 5/final_project"
+CMAKE_SOURCE_DIR = "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 8/final_project"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 5/final_project/cmake-build-debug"
+CMAKE_BINARY_DIR = "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 8/final_project/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/model_test.dir/depend.make
@@ -72,30 +72,30 @@ include CMakeFiles/model_test.dir/flags.make
 CMakeFiles/model_test.dir/src/model.cxx.o: CMakeFiles/model_test.dir/flags.make
 CMakeFiles/model_test.dir/src/model.cxx.o: ../src/model.cxx
 CMakeFiles/model_test.dir/src/model.cxx.o: CMakeFiles/model_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 5/final_project/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/model_test.dir/src/model.cxx.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/model_test.dir/src/model.cxx.o -MF CMakeFiles/model_test.dir/src/model.cxx.o.d -o CMakeFiles/model_test.dir/src/model.cxx.o -c "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 5/final_project/src/model.cxx"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 8/final_project/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/model_test.dir/src/model.cxx.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/model_test.dir/src/model.cxx.o -MF CMakeFiles/model_test.dir/src/model.cxx.o.d -o CMakeFiles/model_test.dir/src/model.cxx.o -c "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 8/final_project/src/model.cxx"
 
 CMakeFiles/model_test.dir/src/model.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/model_test.dir/src/model.cxx.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 5/final_project/src/model.cxx" > CMakeFiles/model_test.dir/src/model.cxx.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 8/final_project/src/model.cxx" > CMakeFiles/model_test.dir/src/model.cxx.i
 
 CMakeFiles/model_test.dir/src/model.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/model_test.dir/src/model.cxx.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 5/final_project/src/model.cxx" -o CMakeFiles/model_test.dir/src/model.cxx.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 8/final_project/src/model.cxx" -o CMakeFiles/model_test.dir/src/model.cxx.s
 
 CMakeFiles/model_test.dir/test/model_test.cxx.o: CMakeFiles/model_test.dir/flags.make
 CMakeFiles/model_test.dir/test/model_test.cxx.o: ../test/model_test.cxx
 CMakeFiles/model_test.dir/test/model_test.cxx.o: CMakeFiles/model_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 5/final_project/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/model_test.dir/test/model_test.cxx.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/model_test.dir/test/model_test.cxx.o -MF CMakeFiles/model_test.dir/test/model_test.cxx.o.d -o CMakeFiles/model_test.dir/test/model_test.cxx.o -c "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 5/final_project/test/model_test.cxx"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 8/final_project/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/model_test.dir/test/model_test.cxx.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/model_test.dir/test/model_test.cxx.o -MF CMakeFiles/model_test.dir/test/model_test.cxx.o.d -o CMakeFiles/model_test.dir/test/model_test.cxx.o -c "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 8/final_project/test/model_test.cxx"
 
 CMakeFiles/model_test.dir/test/model_test.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/model_test.dir/test/model_test.cxx.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 5/final_project/test/model_test.cxx" > CMakeFiles/model_test.dir/test/model_test.cxx.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 8/final_project/test/model_test.cxx" > CMakeFiles/model_test.dir/test/model_test.cxx.i
 
 CMakeFiles/model_test.dir/test/model_test.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/model_test.dir/test/model_test.cxx.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 5/final_project/test/model_test.cxx" -o CMakeFiles/model_test.dir/test/model_test.cxx.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 8/final_project/test/model_test.cxx" -o CMakeFiles/model_test.dir/test/model_test.cxx.s
 
 # Object files for target model_test
 model_test_OBJECTS = \
@@ -115,7 +115,7 @@ model_test: /usr/local/lib/libSDL2_image.dylib
 model_test: /usr/local/lib/libSDL2_mixer.dylib
 model_test: /usr/local/lib/libSDL2_ttf.dylib
 model_test: CMakeFiles/model_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 5/final_project/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable model_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 8/final_project/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable model_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/model_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -127,6 +127,6 @@ CMakeFiles/model_test.dir/clean:
 .PHONY : CMakeFiles/model_test.dir/clean
 
 CMakeFiles/model_test.dir/depend:
-	cd "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 5/final_project/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 5/final_project" "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 5/final_project" "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 5/final_project/cmake-build-debug" "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 5/final_project/cmake-build-debug" "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 5/final_project/cmake-build-debug/CMakeFiles/model_test.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 8/final_project/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 8/final_project" "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 8/final_project" "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 8/final_project/cmake-build-debug" "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 8/final_project/cmake-build-debug" "/Users/bobbyaxelrod/Downloads/Frogger-CS-211-main 8/final_project/cmake-build-debug/CMakeFiles/model_test.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/model_test.dir/depend
 

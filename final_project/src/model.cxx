@@ -14,6 +14,16 @@ int Model::get_time() const
     return int( 30 - (elapsed_time_ / 60));
 }
 
+ge211::Posn<int> Model::change_fly_pos()
+{
+    if (int(elapsed_time_) % 150 == 0)
+    {
+        int index = 0 + (rand() % 5);
+        fly_pos = fly_spaces[index];
+    }
+    return fly_pos;
+}
+
 std::vector<std::pair<float, std::string>> Model::get_lanes(){
     return lanes_;
 }
@@ -67,6 +77,11 @@ void Model::on_frame(double dt){
         lives_ = 0;
     }
 
+    //change fly position
+    change_fly_pos();
+
+
+
     // for each pair in lanes
     for (int i = 0; i < lanes_.size(); i ++) {
 
@@ -75,6 +90,16 @@ void Model::on_frame(double dt){
            if((int) (elapsed_time_ * lanes_[i].first) % amt_of_spots == 12){
                frog_pos.x = frog_pos.x - 36;
         }
+        }
+
+        // if frog is in the last lane, reset the position
+        if(frog_pos.y < 36) {
+            if (frog_pos.x + (36 * 3 / 8) == fly_pos.x) {
+                score_ += 200;
+            }
+            lives_ = lives_ - 1;
+            frog_pos = {36 * 6, 36 * 12};
+            furthest_traveled = 36 * 12;
         }
 
 
@@ -100,12 +125,14 @@ void Model::on_frame(double dt){
             ge211::geometry::Posn<int> {36 * j, 36 * i}){
                 frog_pos = {36 * 6, 36 * 12};
                 lives_ = lives_ - 1;
+                furthest_traveled = 36 * 12;
             }
 
             // if frog is left or right of the screen, IT DIES!!!!
             if (frog_pos.x < 0 || frog_pos.x > 36 * 12){
                 frog_pos = {36 * 6, 36 * 12};
                 lives_ = lives_ - 1;
+                furthest_traveled = 36 * 12;
             }
 
 

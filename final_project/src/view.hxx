@@ -10,11 +10,6 @@ public:
     ge211::Dims<int> initial_window_dimensions() const;
 
     void draw(ge211::Sprite_set& set);
-    
-    ge211::Posn<int> fly_pos = {36 + (36 * 3/8), 36 * 3/8};
-    std::vector<ge211::geometry::Posn<int>> fly_spaces = {{36 + (36 * 3/8),(36 * 3/8)},
-    {(36 * 4) + (36 * 3/8), (36 * 3/8)}, {(36 * 6) + (36 * 3/8), (36 * 3/8)},
-    {(36 * 8) + (36 * 3/8), (36 * 3/8)}, {(36 * 11) + (36 * 3/8), (36 * 3/8)}};
 
 private:
     Model const& model_;

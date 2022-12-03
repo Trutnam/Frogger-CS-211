@@ -8,7 +8,7 @@ using Sprite_set = ge211::Sprite_set;
 static int const grid_size = 36;
 
 static Color const frog_color {43, 156, 28};
-static Color const fly_color {92, 92, 92};
+static Color const fly_color {32, 32, 32};
 static Color const car_color {255, 30, 0};
 static Color const bus_color {0, 21, 255};
 static Color const log_color {74, 44, 19};
@@ -78,12 +78,7 @@ View::draw(ge211::Sprite_set& set)
         set.add_sprite(lives_sprite, {25, 470});
         
         //draw flies
-        if (int(model_.elapsed_time_) % 40 == 0)
-        {
-            int index = 0 + (rand() % 5);
-            fly_pos = fly_spaces[index];
-        }
-        set.add_sprite(fly_sprite, fly_pos, 1);
+        set.add_sprite(fly_sprite, model_.fly_pos, 1);
             
         //i = height
         for (int i = 0; i < 13; i++) {

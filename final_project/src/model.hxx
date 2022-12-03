@@ -16,6 +16,9 @@ public:
     //get time function:
     int get_time() const;
 
+    // get fly position:
+    ge211::Posn<int> change_fly_pos();
+
     std::vector<std::pair<float, std::string>> get_lanes();
 
     // on frame function
@@ -60,5 +63,13 @@ public:
     // stores the furthest(lowest) y coordinate reached by the frog
     int furthest_traveled = 36 * 12;
     ge211::geometry::Posn<int> frog_pos = {36 * 6, 36 * 12};
+
+    ge211::Posn<int> fly_pos = {36 + (36 * 3/8), 36 * 3/8};
+
+    std::vector<ge211::geometry::Posn<int>> fly_spaces = {{36 + (36 * 3/8),(36 * 3/8)},
+                                                          {(36 * 4) + (36 * 3/8), (36 * 3/8)}, {(36 * 6) + (36 * 3/8), (36 * 3/8)},
+                                                          {(36 * 8) + (36 * 3/8), (36 * 3/8)}, {(36 * 11) + (36 * 3/8), (36 * 3/8)}};
+
+
 
 };
