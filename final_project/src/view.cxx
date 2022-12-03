@@ -82,7 +82,7 @@ View::draw(ge211::Sprite_set& set)
             int index = 0 + (rand() % 9);
             fly_pos = fly_spaces[index];
         }
-        set.add_sprite(fly_sprite, fly_pos);
+        set.add_sprite(fly_sprite, fly_pos, 1);
 
         //i = height
         for (int i = 0; i < 13; i++) {
