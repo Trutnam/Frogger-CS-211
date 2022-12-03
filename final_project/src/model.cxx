@@ -9,6 +9,11 @@ int Model::get_lives() const{
     return lives_;
 }
 
+int Model::get_time() const
+{
+    return int( 30 - (elapsed_time_ / 60));
+}
+
 std::vector<std::pair<float, std::string>> Model::get_lanes(){
     return lanes_;
 }
@@ -58,6 +63,9 @@ void Model::on_frame(double dt){
     int initial_posn;
     int amt_of_spots;
 
+    if (get_time() <= 0){
+        lives_ = 0;
+    }
 
     // for each pair in lanes
     for (int i = 0; i < lanes_.size(); i ++) {

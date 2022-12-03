@@ -56,6 +56,13 @@ View::draw(ge211::Sprite_set& set)
     }
     else {
 
+        // draw time
+        ge211::Text_sprite::Builder time_builder(sans30_);
+        time_builder << "Time: " << model_.get_time();
+        time_sprite.reconfigure(time_builder);
+
+        set.add_sprite(time_sprite, {300, 470});
+
         // draw score
         ge211::Text_sprite::Builder score_builder(sans30_);
         score_builder << "Score: " << model_.get_score();
@@ -68,7 +75,7 @@ View::draw(ge211::Sprite_set& set)
         lives_builder << "Lives: " << model_.lives_;
         lives_sprite.reconfigure(lives_builder);
 
-        set.add_sprite(lives_sprite, {25, 475});
+        set.add_sprite(lives_sprite, {25, 470});
 
         //i = height
         for (int i = 0; i < 13; i++) {

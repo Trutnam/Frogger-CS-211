@@ -26,4 +26,6 @@ private:
     ge211::Font sans30_{"sans.ttf", 30};
     ge211::Text_sprite score_sprite_;
     ge211::Text_sprite lives_sprite;
+    ge211::Text_sprite time_sprite;
+
 };

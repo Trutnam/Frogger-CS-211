@@ -13,6 +13,9 @@ public:
     // get lives function:
     int get_lives() const;
 
+    //get time function:
+    int get_time() const;
+
     std::vector<std::pair<float, std::string>> get_lanes();
 
     // on frame function
@@ -30,8 +33,6 @@ public:
     // function to move frog left one unit
     void move_frog_left();
 
-    // stores the furthest(lowest) y coordinate reached by the frog
-    int furthest_traveled = 36 * 12;
 
 
 
@@ -54,9 +55,10 @@ public:
 
             };
     int score_ = 0;
-    bool alive_ = true;
     int lives_ = 3;
     float elapsed_time_ = 0;
+    // stores the furthest(lowest) y coordinate reached by the frog
+    int furthest_traveled = 36 * 12;
     ge211::geometry::Posn<int> frog_pos = {36 * 6, 36 * 12};
 
 };
